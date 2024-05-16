@@ -1,0 +1,45 @@
+
+
+.sectionTwoDiv{
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    gap:30px;
+}
+
+.sectionTwoLeft{
+    width:100%;
+}
+
+.sectionTwoLeft h2{
+    font-size:50px;
+}
+
+.sectionTwoLeft p{
+    padding:20px 0;
+}
+
+.sectionTwoLeft div{
+    display:flex;
+    gap:10px;
+}
+
+.sectionTwoLeft button{
+    padding:10px 30px;
+    font-size:15px;
+    border-radius:30px;
+    border:solid 1px grey;
+}
+
+.savings{
+    background-color:black;
+    color: white;
+}
+
+.sectionTwoRight{
+    width:100%;
+}
+
+.sectionTwoRight img{
+    width:100%;
+}

@@ -90,3 +90,209 @@
 .activeBtn{
     background-color:  rgb(1, 11, 41) !important;
 }
+
+
+
+
+/* ======== SECTION TWO ============= */
+
+.card1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    background-color: rgb(255, 242, 217);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.two{
+    background-color: rgb(252, 217, 255);
+}
+
+.three{
+    background-color: rgb(217, 234, 255);
+}
+
+.card1 p{
+    font-size: 12px;
+}
+
+
+.card1 h2{
+    font-size: 20px;
+}
+
+
+.card1One{
+    width: 100%;
+}
+
+
+.card1One button{
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+}
+
+.card1Two{
+    width: 100%;
+}
+
+
+.homeSectionTwo{
+    padding: 20px 10%;
+    padding-top: 100px;
+}
+
+
+.homeSectionTwoh2{
+    font-size: 30px;
+    font-weight: 500;
+    color: gray;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper{
+    padding-top: 40px !important;
+}
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+
+  /* ========= section two ====== */
+
+.card2{
+    width:100%;
+    text-align:left;
+    position: relative;
+}
+
+.card2Two{
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+}
+
+
+.card2One{
+}
+
+
+.card2One button{
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+}
+
+
+.card2 h2{
+    font-size: 20px;
+}
+
+.card2 p{
+    font-size: 12px;
+}
+
+.card2List{
+    position: absolute;
+    bottom: 150px;
+    left: 15%;
+    display:none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card2List li{
+    background-color: white;
+    font-size: 11px;
+    font-weight:500;
+    padding: 6px 12px;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    border-radius:5px;
+    cursor:pointer;
+    list-style:none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.card2List li:hover{
+    background-color:black;
+    color:white;
+}
+
+.card2:hover .card2List{
+    display: flex;
+}
+
+.card2Two{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.card2One{
+    background-color:white;
+    margin-top:20px;
+    padding:10px;
+}
+
+
+.card2One p{
+    font-size:15px;
+
+}
+.card2Onediv{
+    display: flex;
+    align-items: center;
+    padding-top:10px;
+}
+
+
+.card2Onediv p{
+    margin-left: auto;
+    font-size:12px;
+}
+
+.card2Onediv span{
+    font-size:12px;
+    border:1px solid green;
+    padding:3px 10px;
+    border-radius:5px;
+    color: green;
+}
