@@ -43,3 +43,126 @@
 .sectionTwoRight img{
     width:100%;
 }
+
+
+
+.exploreDiv{
+    background-color: rgb(229, 229, 229);
+    margin: 60px 10%;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.exploreDiv h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.exploreDiv ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: white;
+    width: 60%;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.exploreDiv ul li{
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}   
+
+.activeClass{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+.inActiveClass{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+
+.imageCardDiv{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+
+.imageCollectionGen{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.imageCollection{
+    align-items: center;
+}
+
+.imageCollection div{
+    background-color: rgb(200, 255, 237);
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.imageCollection div img{
+    width: 60px;
+}
+
+
+.imageCollection p{
+    font-size: 13px;
+}
+
+.imageCollection{
+    display: flex;
+    width: 100%;
+}
+
+.imageCollection p{
+    margin-left: auto;
+}
+
+
+.manuClass{
+    padding-top: 30px;
+}
+
+.manuClass h5{
+    font-size: 15px !important;
+    font-weight: 300;
+}
+
+.manuClass h1{
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.manuClass button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
