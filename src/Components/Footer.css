@@ -1,0 +1,35 @@
+
+
+.footerDiv{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 10%;
+    border-top:solid rgb(218, 218, 218) 1px ;
+}
+
+
+.footerUl{
+    width: 100%;
+}
+
+
+.footerUl ul{
+    list-style: none;
+}
+
+.footerUl ul li{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.footerUl p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footerUl img{
+    margin-bottom: 10px;
+}

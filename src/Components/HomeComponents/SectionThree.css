@@ -1,0 +1,106 @@
+
+.sectionThree{
+    padding: 30px 10%;
+    width: 100%;
+}
+
+.sectionThreeDiv{
+    display: flex;
+    position: relative;
+    background-color: aliceblue;
+    padding: 80px 100px;
+    border-radius:20px;
+    height: 550px;
+}
+
+.sectionThreeSubDiv1{
+    width: 100%;
+}
+
+.sectionThreeSubDiv1 h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.sectionThreeSubDiv1 p{
+    padding: 20px 0;
+}
+
+
+.sectionThreeSubDiv1 ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sectionThreeSubDiv1 ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+.spansElement1,
+.spansElement2,
+.spansElement3{
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 30px;
+    border-radius: 20px;
+
+}
+
+.spansElement1{
+    background-color:antiquewhite;
+}
+
+.spansElement2{
+    background-color:paleturquoise;
+}
+
+.spansElement3{
+    background-color: palevioletred;
+}
+
+.sectionThreeSubDiv2{
+    position: absolute;
+    right: -150px;
+    top: -70px;
+}
+
+
+.sectionThreeSubDiv1 form{
+    width: 100%;
+    position: relative;
+}
+
+
+.sectionThreeSubDiv1 form input{
+    width: 40%;
+    padding: 15px;
+    border: rgb(224, 224, 224) solid 1px;
+    outline: none;
+    border-radius: 40px;
+}
+
+.sectionThreeSubDiv1 form button{
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 61%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 13px;
+    cursor: pointer;
+}
+
+
+.sectionThreeSubDiv2 img{
+    width: 75%;
+}
