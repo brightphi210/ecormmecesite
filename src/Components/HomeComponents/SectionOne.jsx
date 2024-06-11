@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './SectionOne.css'
 import image1 from '../Images/hero-right.webp'
 import image2 from '../Images/hero-right-2.webp'
@@ -25,6 +25,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom'
 
 
 const SectionOne = () => {
@@ -57,6 +58,27 @@ const SectionOne = () => {
   }
 
 
+  const [productsData, setProductsData] = useState([])
+  const url = 'http://127.0.0.1:8000/api/products/'
+
+  const handleFetch = async () => {
+    const response = await fetch(url, {
+      method: 'GET',
+      // headers: {
+      //   'Content-Type': 'application/json'
+      // }
+    })
+
+    const data = await response.json()
+    setProductsData(data)
+    console.log(data)
+  }
+
+  useEffect(() => {
+    handleFetch()
+  }, [])
+
+  console.log(productsData);
   
   return (
 
@@ -238,143 +260,39 @@ const SectionOne = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-        <SwiperSlide>
-            <div className='card2'>
-              <div className='card2Two'>
-                <img src={img2} alt="" />
-              </div>
 
-              <div className='card2One'>
-                <p>Leave Gloves</p>
-                <p>Perfect mint green</p>
-              </div>
+          {productsData.map((product)=>(
 
-              <ul className="card2List">
-                <li>XS</li>
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-              </ul>
+            <SwiperSlide>
+                <Link to={`/product/${product.id}`}>
+                <div className='card2'>
+                  <div className='card2Two'>
+                    <img src={product.image} alt="" />
+                  </div>
 
-              <div className='card2Onediv'>
-                  <span>$42</span>
+                  <div className='card2One'>
+                    <p>{product.name}</p>
+                    <p>{product.description}</p>
+                  </div>
 
-                  <p>4.9(98 reviews)</p>
-              </div>
+                  <ul className="card2List">
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                  </ul>
 
-            </div>
-        </SwiperSlide>
+                  <div className='card2Onediv'>
+                      <span>${product.price}</span>
 
-        <SwiperSlide>
-            <div className='card2'>
-              <div className='card2Two'>
-                <img src={img1} alt="" />
-              </div>
+                      <p>4.9(98 reviews)</p>
+                  </div>
 
-              <ul className="card2List">
-                <li>XS</li>
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-              </ul>
-
-              <div className='card2One'>
-
-                <p>Leave Gloves</p>
-                <p>Perfect mint green</p>
-
-                <div className='card2Onediv'>
-                  <span>$42</span>
-
-                  <p>4.9(98 reviews)</p>
                 </div>
-              </div>
-
-
-
-            </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <div className='card2'>
-              <div className='card2Two'>
-                <img src={img3} alt="" />
-              </div>
-
-              <div className='card2One'>
-                <p>Leave Gloves</p>
-                <p>Perfect mint green</p>
-              </div>
-
-              <ul className="card2List">
-                <li>XS</li>
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-              </ul>
-
-
-              <div className='card2Onediv'>
-                  <span>$42</span>
-
-                  <p>4.9(98 reviews)</p>
-              </div>
-            </div>
-        </SwiperSlide>
-
-
-        <SwiperSlide>
-            <div className='card2'>
-              <div className='card2Two'>
-                <img src={img4} alt="" />
-              </div>
-
-              <div className='card2One'>
-                <p>Leave Gloves</p>
-                <p>Perfect mint green</p>
-              </div>
-
-              <ul className="card2List">
-                <li>XS</li>
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-              </ul>
-
-
-              <div className='card2Onediv'>
-                  <span>$42</span>
-
-                  <p>4.9(98 reviews)</p>
-              </div>
-
-            </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <div className='card2'>
-              <div className='card2Two'>
-                <img src={img5} alt="" />
-              </div>
-
-              <div className='card2One'>
-                <p>Leave Gloves</p>
-                <p>Perfect mint green</p>
-              </div>
-
-
-              <div className='card2Onediv'>
-                  <span>$42</span>
-
-                  <p>4.9(98 reviews)</p>
-              </div>
-
-            </div>
-        </SwiperSlide>
+                </Link>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
